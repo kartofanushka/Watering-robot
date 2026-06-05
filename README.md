@@ -6,6 +6,10 @@ A multi-microcontroller system that autonomously locates a plant pot, navigates 
 
 ---
 
+https://github.com/user-attachments/assets/555eec88-1f2c-4bef-948b-3742ec66337b
+
+---
+
 ## How it works
 
 The system consists of three separate microcontrollers that communicate over WiFi on a shared local network. The main ESP32 acts as the brain — it runs a web server, receives data from the other two modules, and controls the robot's movement. All devices connect via mDNS, so the robot is always reachable at `http://wateringrobot.local` without hardcoded IP addresses.
@@ -44,6 +48,10 @@ angle = (centerX - 80) × (FOV/2) / 80
 ```
 
 This angle — negative for left, positive for right, `404` for not found — is sent to the main ESP32 via HTTP GET every 200 ms. The main robot uses this value both for steering while following and for confirming arrival when the ultrasonic sensor detects a close object.
+
+
+https://github.com/user-attachments/assets/d0a08f9c-38ac-41e1-830b-2962d2f2c1c2
+
 
 ---
 
