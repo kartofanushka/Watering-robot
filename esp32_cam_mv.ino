@@ -5,8 +5,8 @@
 #include "soc/rtc_cntl_reg.h"
 
 // ================= WIFI SETTINGS ============
-const char* ssid = "anaredmi";
-const char* password = "mimashi123";
+const char* ssid = "___";
+const char* password = "___";
 
 // ================= MAIN ESP32 HOSTNAME ==============
 const char* mainESP32_HOST = "wateringrobot.local";
